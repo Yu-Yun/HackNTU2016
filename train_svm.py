@@ -1,5 +1,7 @@
 # coding: utf-8
 from scipy import stats
+from sklearn import datasets
+from sklearn import svm
 import numpy as np
 import re
 #text
