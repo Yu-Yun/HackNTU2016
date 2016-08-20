@@ -14,7 +14,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from translator.views import user_input
+from translator.views import os_output
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^user_input/$', user_input),
+    url(r'^post/new/$', views.post_new, name='post_new'),
 ]
